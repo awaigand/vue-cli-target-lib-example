@@ -12,7 +12,8 @@
     "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
-    "vue": "^2.5.21"
+    "vue": "^2.5.21",
+    "vuetify": "^1.4.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.3.0",
