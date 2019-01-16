@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>ccv demo</title>
+    <script src="https://unpkg.com/vue@2.5.22/dist/vue.min.js"></script>
+    <script src="./plugin-dist/test-lib.umd.js"></script>
+    <link rel="stylesheet" href="./plugin-dist/test-lib.css" />
+  </head>
+  <body>
+    <div id="app">
+      <h1>I am regular html within an Vue app</h1>
+      <hello-world></hello-world>
+      <t-hyphen></t-hyphen> <!-- It is called t-hyphen, because it is renamed in the library-plugin entry-->
+    </div>
+
+    <script>
+      Vue.use(window['test-lib'].default)
+      new Vue({
+        el: '#app'
+      });
+    </script>
+  </body>
+</html>
